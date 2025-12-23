@@ -1,0 +1,17 @@
+from pydantic import BaseModel, EmailStr
+from typing import Optional
+
+
+class UserRegister(BaseModel):
+    username: str
+    password: str
+
+
+class UserLogin(BaseModel):
+    username: str
+    password: str
+
+
+class TodoCreate(BaseModel):
+    title: str
+    completed: Optional[bool] = False

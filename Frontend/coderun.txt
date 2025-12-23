@@ -1,0 +1,6 @@
+TO run backend - > 
+cd /app
+fastapi dev main.py
+
+To run frontend
+ npm start

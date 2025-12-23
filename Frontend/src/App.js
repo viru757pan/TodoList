@@ -7,7 +7,7 @@ import Register from "./pages/Register";
 
 export default function App() {
   useEffect(() => {
-    document.title = "ParEase";
+    document.title = "TodoList";
   }, []);
 
   return (

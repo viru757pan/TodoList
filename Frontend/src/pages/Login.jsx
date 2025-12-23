@@ -53,6 +53,19 @@ export default function Login() {
         >
           Login
         </button>
+
+        {/* ➕ Don't have account */}
+        <div className="mt-4 text-center">
+          <p className="text-sm text-gray-600">Don’t have an account?</p>
+
+          <button
+            type="button"
+            onClick={() => navigate("/register")}
+            className="text-blue-600 font-medium hover:underline mt-1"
+          >
+            Create Account
+          </button>
+        </div>
       </form>
     </div>
   );

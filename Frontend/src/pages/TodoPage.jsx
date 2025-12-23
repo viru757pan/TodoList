@@ -35,8 +35,6 @@ function TodoPage() {
 
   useEffect(() => {
     fetchTodos();
-
-    console.log("todo", todos);
   }, []);
 
   return (

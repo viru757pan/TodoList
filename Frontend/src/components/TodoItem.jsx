@@ -1,8 +1,6 @@
 import { Badge, BadgeCheck } from "lucide-react";
 
 function TodoItem({ todo, toggleTodo, deleteTodo }) {
-  console.log("Topoo", todo);
-
   return (
     <div className="flex items-center justify-between p-2 border rounded mb-2">
       <div className="flex items-center gap-3 p-2">
@@ -13,7 +11,7 @@ function TodoItem({ todo, toggleTodo, deleteTodo }) {
 
         {/* Title */}
         <span
-          className={`cursor-pointer ${
+          className={`text-lg ${
             todo["completed"] ? "line-through text-gray-500" : ""
           }`}
         >
